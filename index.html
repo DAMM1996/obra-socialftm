@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Obra Social - IPUC Belén Fátima</title>
-  <!-- Fuentes elegantes de Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,289 +11,318 @@
 </head>
 <body>
 
-  <div class="page-container">
-
-    <!-- Decoración botánica de fondo/esquinas -->
-    <div class="leaf-bg leaf-top-left"></div>
-    <div class="leaf-bg leaf-bottom-right"></div>
+  <div class="sheet-container">
+    <!-- Adornos de hojas botánicas -->
+    <div class="botanical-leaf top-left"></div>
+    <div class="botanical-leaf bottom-right"></div>
+    <div class="botanical-leaf bottom-left"></div>
 
     <!-- ENCABEZADO -->
-    <header class="header-grid">
-      <div class="logo-box">
-        <div class="logo-badge">
-          <div class="logo-icon">🌐</div>
-          <div class="logo-title">IPUC</div>
-          <div class="logo-sub">BELÉN FÁTIMA</div>
+    <header class="header">
+      <div class="header-left">
+        <div class="logo-circle">
+          <div class="logo-inner">
+            <svg class="globe-svg" viewBox="0 0 24 24" fill="none" stroke="#0B253A" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <div class="logo-text-main">IPUC</div>
+            <div class="logo-text-sub">BELÉN FÁTIMA</div>
+          </div>
         </div>
       </div>
 
-      <div class="title-box">
-        <h1 class="main-title">Obra Social</h1>
+      <div class="header-center">
+        <h1 class="script-title">Obra Social</h1>
         <p class="subtitle">♡ ESTAMOS PARA SERVIRTE ♡</p>
-        <p class="header-desc">
+        <p class="desc">
           Queremos acompañarte y apoyarte.<br>
-          La información suministrada será tratada con respeto y confidencialidad.
+          La información suministrada será tratada<br>con respeto y confidencialidad.
         </p>
-        <div class="gold-divider"><span>♡</span></div>
+        <div class="heart-divider">
+          <span class="line"></span>
+          <span class="heart">♡</span>
+          <span class="line"></span>
+        </div>
       </div>
 
-      <div class="verse-box">
-        <div class="verse-icon">🤲</div>
-        <p class="verse-text">Lleven las cargas los unos de los otros, y así cumplirán la ley de Cristo.</p>
+      <div class="header-right">
+        <div class="verse-hands">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#2D5A44" stroke-width="1.5">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+          </svg>
+        </div>
+        <p class="script-verse">Lleven las cargas los unos de los otros, y así cumplirán la ley de Cristo.</p>
         <p class="verse-ref">Gálatas 6:2</p>
       </div>
     </header>
 
     <form id="obraSocialForm">
 
-      <!-- 1. DATOS PERSONALES -->
+      <!-- SECCIÓN 1 -->
       <div class="section-card">
-        <div class="pill-header green">
-          <span class="icon">👤</span> 1. DATOS PERSONALES
+        <div class="pill-title green-pill">
+          <div class="pill-icon">👤</div>
+          <span>1. DATOS PERSONALES</span>
         </div>
-        <div class="form-row">
+        <div class="input-line-group">
           <label>Nombre completo:</label>
           <input type="text" name="nombre" required>
         </div>
-        <div class="form-row">
+        <div class="input-line-group">
           <label>Teléfono / WhatsApp:</label>
           <input type="tel" name="telefono" required>
         </div>
       </div>
 
-      <!-- 2. ¿EN QUÉ PODEMOS APOYARTE? -->
-      <div class="section-card center-card">
-        <div class="pill-header dark-navy">
-          2. ¿EN QUÉ PODEMOS APOYARTE? <span class="icon-right">🌿</span>
+      <!-- SECCIÓN 2 -->
+      <div class="section-card center-align">
+        <div class="pill-title navy-pill center-pill">
+          <span>2. ¿EN QUÉ PODEMOS APOYARTE?</span>
+          <div class="pill-icon-right">🌿</div>
         </div>
-        <p class="sub-instruction">Marca una o ambas opciones</p>
-        
-        <div class="support-grid">
-          <label class="support-card green-card">
-            <div class="card-icon">🙏</div>
-            <div class="card-text">
-              <span class="top-text">NECESITO</span>
-              <span class="main-text">ORACIÓN</span>
+        <p class="instruction">Marca una o ambas opciones</p>
+
+        <div class="support-boxes">
+          <label class="support-card green-border">
+            <div class="support-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#2D5A44" stroke-width="1.5"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 8v8M8 12h8"/></svg>
+            </div>
+            <div class="support-text">
+              <span class="sub">NECESITO</span>
+              <span class="main green-text">ORACIÓN</span>
             </div>
             <input type="checkbox" name="apoyo_general" value="Necesito Oración">
-            <span class="custom-checkbox"></span>
+            <span class="checkbox-square"></span>
           </label>
 
-          <label class="support-card gold-card">
-            <div class="card-icon">🤲</div>
-            <div class="card-text">
-              <span class="top-text">NECESITO</span>
-              <span class="main-text gold-text">AYUDA O APOYO</span>
+          <div class="dotted-divider">
+            <span class="dot-circle">o</span>
+          </div>
+
+          <label class="support-card gold-border">
+            <div class="support-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#C07D33" stroke-width="1.5"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <div class="support-text">
+              <span class="sub">NECESITO</span>
+              <span class="main gold-text">AYUDA O APOYO</span>
             </div>
             <input type="checkbox" name="apoyo_general" value="Necesito Ayuda o Apoyo">
-            <span class="custom-checkbox"></span>
+            <span class="checkbox-square"></span>
           </label>
         </div>
       </div>
 
-      <!-- COLUMNAS SECCIÓN 3 Y 4 -->
-      <div class="two-columns-grid">
-        
-        <!-- 3. MOTIVOS DE ORACIÓN -->
-        <div class="section-card">
-          <div class="pill-header green">
-            <span class="icon">♡</span> 3. SI SOLICITAS ORACIÓN, ¿POR QUÉ MOTIVO?
+      <!-- SECCIÓN 3 Y 4 EN 2 COLUMNAS -->
+      <div class="columns-2">
+
+        <!-- COLUMNA IZQUIERDA: 3 -->
+        <div class="section-card green-bg-soft">
+          <div class="pill-title green-pill">
+            <div class="pill-icon">♡</div>
+            <span>3. SI SOLICITAS ORACIÓN, ¿POR QUÉ MOTIVO?</span>
           </div>
-          <p class="sub-instruction align-left">Puedes marcar varias opciones</p>
+          <p class="instruction left">Puedes marcar varias opciones</p>
 
-          <div class="checkbox-list">
-            <label class="cb-item">
+          <div class="options-list">
+            <label class="option-item">
               <input type="checkbox" name="oracion" value="Salud o enfermedad">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge">🩺</span>
-              <span class="cb-label">Salud o enfermedad</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon green-icon">🩺</span>
+              <span class="label-text">Salud o enfermedad</span>
             </label>
 
-            <label class="cb-item">
+            <label class="option-item">
               <input type="checkbox" name="oracion" value="Situación familiar o personal">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge">👥</span>
-              <span class="cb-label">Situación familiar o personal</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon green-icon">👥</span>
+              <span class="label-text">Situación familiar o personal</span>
             </label>
 
-            <label class="cb-item">
+            <label class="option-item">
               <input type="checkbox" name="oracion" value="Situación económica">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge">💲</span>
-              <span class="cb-label">Situación económica</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon green-icon">💲</span>
+              <span class="label-text">Situación económica</span>
             </label>
 
-            <label class="cb-item">
+            <label class="option-item">
               <input type="checkbox" name="oracion" value="Situación laboral">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge">💼</span>
-              <span class="cb-label">Situación laboral</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon green-icon">💼</span>
+              <span class="label-text">Situación laboral</span>
             </label>
 
-            <label class="cb-item">
+            <label class="option-item">
               <input type="checkbox" name="oracion" value="Fortalecimiento espiritual">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge">🌱</span>
-              <span class="cb-label">Fortalecimiento espiritual</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon green-icon">🌱</span>
+              <span class="label-text">Fortalecimiento espiritual</span>
             </label>
 
-            <label class="cb-item">
+            <label class="option-item">
               <input type="checkbox" name="oracion" value="Situación emocional">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge">🧠</span>
-              <span class="cb-label">Situación emocional</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon green-icon">🧠</span>
+              <span class="label-text">Situación emocional</span>
             </label>
 
-            <label class="cb-item">
+            <label class="option-item">
               <input type="checkbox" name="oracion" value="Dirección o toma de decisiones">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge">⚓</span>
-              <span class="cb-label">Dirección o toma de decisiones</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon green-icon">⚓</span>
+              <span class="label-text">Dirección o toma de decisiones</span>
             </label>
 
-            <label class="cb-item inline-flex">
+            <label class="option-item inline-item">
               <input type="checkbox" name="oracion" value="Otro">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge">💬</span>
-              <span class="cb-label">Otro:</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon green-icon">💬</span>
+              <span class="label-text">Otro:</span>
               <input type="text" name="oracion_otro" class="line-input">
             </label>
           </div>
         </div>
 
-        <!-- 4. AYUDA O APOYO -->
-        <div class="section-card gold-bg">
-          <div class="pill-header gold">
-            <span class="icon">🤝</span> 4. SI SOLICITAS AYUDA O APOYO, ¿QUÉ NECESITAS?
+        <!-- COLUMNA DERECHA: 4 -->
+        <div class="section-card gold-bg-soft">
+          <div class="pill-title gold-pill">
+            <div class="pill-icon">🤝</div>
+            <span>4. SI SOLICITAS AYUDA O APOYO, ¿QUÉ NECESITAS?</span>
           </div>
-          <p class="sub-instruction align-left">Puedes marcar varias opciones</p>
+          <p class="instruction left">Puedes marcar varias opciones</p>
 
-          <div class="checkbox-grid-2">
-            <label class="cb-item">
+          <div class="options-grid-2">
+            <label class="option-item">
               <input type="checkbox" name="ayuda" value="Apoyo económico">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge gold">$</span>
-              <span class="cb-label">Apoyo económico</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon gold-icon">$</span>
+              <span class="label-text">Apoyo económico</span>
             </label>
 
-            <label class="cb-item">
+            <label class="option-item">
               <input type="checkbox" name="ayuda" value="Apoyo psicológico">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge gold">🧠</span>
-              <span class="cb-label">Apoyo psicológico</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon gold-icon">🧠</span>
+              <span class="label-text">Apoyo psicológico</span>
             </label>
 
-            <label class="cb-item">
+            <label class="option-item">
               <input type="checkbox" name="ayuda" value="Alimentos o mercado">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge gold">🛒</span>
-              <span class="cb-label">Alimentos o mercado</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon gold-icon">🛍️</span>
+              <span class="label-text">Alimentos o mercado</span>
             </label>
 
-            <label class="cb-item">
+            <label class="option-item">
               <input type="checkbox" name="ayuda" value="Asesoría financiera">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge gold">📊</span>
-              <span class="cb-label">Asesoría financiera</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon gold-icon">📈</span>
+              <span class="label-text">Asesoría financiera</span>
             </label>
 
-            <label class="cb-item">
+            <label class="option-item">
               <input type="checkbox" name="ayuda" value="Ropa o elementos básicos">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge gold">👕</span>
-              <span class="cb-label">Ropa o elem. básicos</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon gold-icon">👕</span>
+              <span class="label-text">Ropa o elementos básicos</span>
             </label>
 
-            <label class="cb-item">
+            <label class="option-item">
               <input type="checkbox" name="ayuda" value="Orientación o apoyo laboral">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge gold">💼</span>
-              <span class="cb-label">Orientación laboral</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon gold-icon">💼</span>
+              <span class="label-text">Orientación o apoyo laboral</span>
             </label>
 
-            <label class="cb-item">
+            <label class="option-item">
               <input type="checkbox" name="ayuda" value="Vivienda o necesidad del hogar">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge gold">🏠</span>
-              <span class="cb-label">Vivienda u hogar</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon gold-icon">🏠</span>
+              <span class="label-text">Vivienda o necesidad del hogar</span>
             </label>
 
-            <label class="cb-item inline-flex">
+            <label class="option-item inline-item">
               <input type="checkbox" name="ayuda" value="Otro">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge gold">💬</span>
-              <span class="cb-label">Otro:</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon gold-icon">💬</span>
+              <span class="label-text">Otro:</span>
               <input type="text" name="ayuda_otro" class="line-input short">
             </label>
 
-            <label class="cb-item full-row">
+            <label class="option-item full-width">
               <input type="checkbox" name="ayuda" value="Apoyo relacionado con salud">
-              <span class="custom-checkbox"></span>
-              <span class="icon-badge gold">🏥</span>
-              <span class="cb-label">Apoyo relacionado con salud</span>
+              <span class="checkbox-square"></span>
+              <span class="round-icon gold-icon">🏥</span>
+              <span class="label-text">Apoyo relacionado con salud</span>
             </label>
           </div>
 
-          <div class="textarea-section">
-            <p class="script-label">Cuéntanos brevemente tu necesidad: ✏️</p>
-            <textarea name="detalle_necesidad" rows="3" placeholder="Escribe aquí..."></textarea>
+          <div class="handwriting-section">
+            <p class="handwriting-label">Cuéntanos brevemente tu necesidad: ✏️</p>
+            <div class="write-line-input">
+              <input type="text" name="detalle_necesidad_1" class="full-line">
+              <input type="text" name="detalle_necesidad_2" class="full-line">
+              <input type="text" name="detalle_necesidad_3" class="full-line">
+            </div>
           </div>
         </div>
 
       </div>
 
-      <!-- 5. ¿CÓMO PREFIERES QUE TE CONTACTEMOS? -->
+      <!-- SECCIÓN 5 -->
       <div class="section-card">
-        <div class="pill-header dark-navy">
-          <span class="icon">💬</span> 5. ¿CÓMO PREFIERES QUE TE CONTACTEMOS?
+        <div class="pill-title navy-pill">
+          <div class="pill-icon">💬</div>
+          <span>5. ¿CÓMO PREFIERES QUE TE CONTACTEMOS?</span>
         </div>
-        
-        <div class="contact-options-row">
-          <label class="cb-item">
+
+        <div class="contact-row">
+          <label class="option-item">
             <input type="checkbox" name="contacto" value="Llamada telefónica">
-            <span class="custom-checkbox"></span>
-            <span class="circle-icon green-bg">📞</span>
-            <span class="cb-label">Llamada telefónica</span>
+            <span class="checkbox-square"></span>
+            <span class="round-icon green-solid">📞</span>
+            <span class="label-text">Llamada telefónica</span>
           </label>
 
-          <label class="cb-item">
+          <label class="option-item">
             <input type="checkbox" name="contacto" value="WhatsApp">
-            <span class="custom-checkbox"></span>
-            <span class="circle-icon whatsapp-bg">💬</span>
-            <span class="cb-label">WhatsApp</span>
+            <span class="checkbox-square"></span>
+            <span class="round-icon whatsapp-solid">💬</span>
+            <span class="label-text">WhatsApp</span>
           </label>
 
-          <label class="cb-item">
+          <label class="option-item">
             <input type="checkbox" name="contacto" value="Visita">
-            <span class="custom-checkbox"></span>
-            <span class="circle-icon green-bg">🏠</span>
-            <span class="cb-label">Visita</span>
+            <span class="checkbox-square"></span>
+            <span class="round-icon green-solid">🏠</span>
+            <span class="label-text">Visita</span>
           </label>
 
-          <label class="cb-item inline-flex">
+          <label class="option-item inline-item">
             <input type="checkbox" name="contacto" value="Otro">
-            <span class="custom-checkbox"></span>
-            <span class="circle-icon grey-bg">💬</span>
-            <span class="cb-label">Otro:</span>
+            <span class="checkbox-square"></span>
+            <span class="round-icon grey-solid">💬</span>
+            <span class="label-text">Otro:</span>
             <input type="text" name="contacto_otro" class="line-input">
           </label>
         </div>
       </div>
 
-      <!-- PIE DE PÁGINA Y BOTÓN DE ENVÍO -->
-      <div class="footer-block">
-        <div class="thanks-phrase">
+      <!-- PIE DE PÁGINA -->
+      <footer class="sheet-footer">
+        <div class="thanks-line">
           <span class="script-thanks">Gracias</span>
-          <span class="sub-thanks">por permitirnos acompañarte.</span>
+          <span class="thanks-text">por permitirnos acompañarte.</span>
         </div>
-        <p class="tagline">ESTAMOS AQUÍ PARA SERVIRTE Y CAMINAR CONTIGO.</p>
-        <p class="heart-symbol">♡</p>
-
-        <button type="submit" id="submitBtn">ENVIAR FORMULARIO</button>
-      </div>
+        <p class="footer-tagline">ESTAMOS AQUÍ PARA SERVIRTE Y CAMINAR CONTIGO.</p>
+        <p class="footer-heart">♡</p>
+        
+        <button type="submit" id="submitBtn">ENVIAR INFORMACIÓN</button>
+      </footer>
 
     </form>
-
   </div>
 
   <script src="script.js"></script>
