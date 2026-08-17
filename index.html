@@ -6,324 +6,141 @@
   <title>Obra Social - IPUC Belén Fátima</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="sheet-container">
-    <!-- Adornos de hojas botánicas -->
-    <div class="botanical-leaf top-left"></div>
-    <div class="botanical-leaf bottom-right"></div>
-    <div class="botanical-leaf bottom-left"></div>
-
+  <main class="form-card">
+    
     <!-- ENCABEZADO -->
     <header class="header">
-      <div class="header-left">
-        <div class="logo-circle">
-          <div class="logo-inner">
-            <svg class="globe-svg" viewBox="0 0 24 24" fill="none" stroke="#0B253A" stroke-width="1.5">
-              <circle cx="12" cy="12" r="10"></circle>
-              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-            </svg>
-            <div class="logo-text-main">IPUC</div>
-            <div class="logo-text-sub">BELÉN FÁTIMA</div>
-          </div>
+      <div class="brand">
+        <div class="logo">IPUC</div>
+        <div class="brand-info">
+          <h2>Obra Social</h2>
+          <p>Belén Fátima</p>
         </div>
       </div>
-
-      <div class="header-center">
-        <h1 class="script-title">Obra Social</h1>
-        <p class="subtitle">♡ ESTAMOS PARA SERVIRTE ♡</p>
-        <p class="desc">
-          Queremos acompañarte y apoyarte.<br>
-          La información suministrada será tratada<br>con respeto y confidencialidad.
-        </p>
-        <div class="heart-divider">
-          <span class="line"></span>
-          <span class="heart">♡</span>
-          <span class="line"></span>
-        </div>
-      </div>
-
-      <div class="header-right">
-        <div class="verse-hands">
-          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#2D5A44" stroke-width="1.5">
-            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
-          </svg>
-        </div>
-        <p class="script-verse">Lleven las cargas los unos de los otros, y así cumplirán la ley de Cristo.</p>
-        <p class="verse-ref">Gálatas 6:2</p>
-      </div>
+      <p class="tagline">«Estamos para servirte»</p>
+      <p class="description">
+        Queremos acompañarte y apoyarte. La información suministrada será tratada con total respeto y confidencialidad.
+      </p>
     </header>
 
     <form id="obraSocialForm">
 
-      <!-- SECCIÓN 1 -->
-      <div class="section-card">
-        <div class="pill-title green-pill">
-          <div class="pill-icon">👤</div>
-          <span>1. DATOS PERSONALES</span>
-        </div>
-        <div class="input-line-group">
-          <label>Nombre completo:</label>
-          <input type="text" name="nombre" required>
-        </div>
-        <div class="input-line-group">
-          <label>Teléfono / WhatsApp:</label>
-          <input type="tel" name="telefono" required>
-        </div>
-      </div>
-
-      <!-- SECCIÓN 2 -->
-      <div class="section-card center-align">
-        <div class="pill-title navy-pill center-pill">
-          <span>2. ¿EN QUÉ PODEMOS APOYARTE?</span>
-          <div class="pill-icon-right">🌿</div>
-        </div>
-        <p class="instruction">Marca una o ambas opciones</p>
-
-        <div class="support-boxes">
-          <label class="support-card green-border">
-            <div class="support-icon">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#2D5A44" stroke-width="1.5"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 8v8M8 12h8"/></svg>
-            </div>
-            <div class="support-text">
-              <span class="sub">NECESITO</span>
-              <span class="main green-text">ORACIÓN</span>
-            </div>
-            <input type="checkbox" name="apoyo_general" value="Necesito Oración">
-            <span class="checkbox-square"></span>
-          </label>
-
-          <div class="dotted-divider">
-            <span class="dot-circle">o</span>
-          </div>
-
-          <label class="support-card gold-border">
-            <div class="support-icon">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#C07D33" stroke-width="1.5"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-            </div>
-            <div class="support-text">
-              <span class="sub">NECESITO</span>
-              <span class="main gold-text">AYUDA O APOYO</span>
-            </div>
-            <input type="checkbox" name="apoyo_general" value="Necesito Ayuda o Apoyo">
-            <span class="checkbox-square"></span>
-          </label>
-        </div>
-      </div>
-
-      <!-- SECCIÓN 3 Y 4 EN 2 COLUMNAS -->
-      <div class="columns-2">
-
-        <!-- COLUMNA IZQUIERDA: 3 -->
-        <div class="section-card green-bg-soft">
-          <div class="pill-title green-pill">
-            <div class="pill-icon">♡</div>
-            <span>3. SI SOLICITAS ORACIÓN, ¿POR QUÉ MOTIVO?</span>
-          </div>
-          <p class="instruction left">Puedes marcar varias opciones</p>
-
-          <div class="options-list">
-            <label class="option-item">
-              <input type="checkbox" name="oracion" value="Salud o enfermedad">
-              <span class="checkbox-square"></span>
-              <span class="round-icon green-icon">🩺</span>
-              <span class="label-text">Salud o enfermedad</span>
-            </label>
-
-            <label class="option-item">
-              <input type="checkbox" name="oracion" value="Situación familiar o personal">
-              <span class="checkbox-square"></span>
-              <span class="round-icon green-icon">👥</span>
-              <span class="label-text">Situación familiar o personal</span>
-            </label>
-
-            <label class="option-item">
-              <input type="checkbox" name="oracion" value="Situación económica">
-              <span class="checkbox-square"></span>
-              <span class="round-icon green-icon">💲</span>
-              <span class="label-text">Situación económica</span>
-            </label>
-
-            <label class="option-item">
-              <input type="checkbox" name="oracion" value="Situación laboral">
-              <span class="checkbox-square"></span>
-              <span class="round-icon green-icon">💼</span>
-              <span class="label-text">Situación laboral</span>
-            </label>
-
-            <label class="option-item">
-              <input type="checkbox" name="oracion" value="Fortalecimiento espiritual">
-              <span class="checkbox-square"></span>
-              <span class="round-icon green-icon">🌱</span>
-              <span class="label-text">Fortalecimiento espiritual</span>
-            </label>
-
-            <label class="option-item">
-              <input type="checkbox" name="oracion" value="Situación emocional">
-              <span class="checkbox-square"></span>
-              <span class="round-icon green-icon">🧠</span>
-              <span class="label-text">Situación emocional</span>
-            </label>
-
-            <label class="option-item">
-              <input type="checkbox" name="oracion" value="Dirección o toma de decisiones">
-              <span class="checkbox-square"></span>
-              <span class="round-icon green-icon">⚓</span>
-              <span class="label-text">Dirección o toma de decisiones</span>
-            </label>
-
-            <label class="option-item inline-item">
-              <input type="checkbox" name="oracion" value="Otro">
-              <span class="checkbox-square"></span>
-              <span class="round-icon green-icon">💬</span>
-              <span class="label-text">Otro:</span>
-              <input type="text" name="oracion_otro" class="line-input">
-            </label>
-          </div>
-        </div>
-
-        <!-- COLUMNA DERECHA: 4 -->
-        <div class="section-card gold-bg-soft">
-          <div class="pill-title gold-pill">
-            <div class="pill-icon">🤝</div>
-            <span>4. SI SOLICITAS AYUDA O APOYO, ¿QUÉ NECESITAS?</span>
-          </div>
-          <p class="instruction left">Puedes marcar varias opciones</p>
-
-          <div class="options-grid-2">
-            <label class="option-item">
-              <input type="checkbox" name="ayuda" value="Apoyo económico">
-              <span class="checkbox-square"></span>
-              <span class="round-icon gold-icon">$</span>
-              <span class="label-text">Apoyo económico</span>
-            </label>
-
-            <label class="option-item">
-              <input type="checkbox" name="ayuda" value="Apoyo psicológico">
-              <span class="checkbox-square"></span>
-              <span class="round-icon gold-icon">🧠</span>
-              <span class="label-text">Apoyo psicológico</span>
-            </label>
-
-            <label class="option-item">
-              <input type="checkbox" name="ayuda" value="Alimentos o mercado">
-              <span class="checkbox-square"></span>
-              <span class="round-icon gold-icon">🛍️</span>
-              <span class="label-text">Alimentos o mercado</span>
-            </label>
-
-            <label class="option-item">
-              <input type="checkbox" name="ayuda" value="Asesoría financiera">
-              <span class="checkbox-square"></span>
-              <span class="round-icon gold-icon">📈</span>
-              <span class="label-text">Asesoría financiera</span>
-            </label>
-
-            <label class="option-item">
-              <input type="checkbox" name="ayuda" value="Ropa o elementos básicos">
-              <span class="checkbox-square"></span>
-              <span class="round-icon gold-icon">👕</span>
-              <span class="label-text">Ropa o elementos básicos</span>
-            </label>
-
-            <label class="option-item">
-              <input type="checkbox" name="ayuda" value="Orientación o apoyo laboral">
-              <span class="checkbox-square"></span>
-              <span class="round-icon gold-icon">💼</span>
-              <span class="label-text">Orientación o apoyo laboral</span>
-            </label>
-
-            <label class="option-item">
-              <input type="checkbox" name="ayuda" value="Vivienda o necesidad del hogar">
-              <span class="checkbox-square"></span>
-              <span class="round-icon gold-icon">🏠</span>
-              <span class="label-text">Vivienda o necesidad del hogar</span>
-            </label>
-
-            <label class="option-item inline-item">
-              <input type="checkbox" name="ayuda" value="Otro">
-              <span class="checkbox-square"></span>
-              <span class="round-icon gold-icon">💬</span>
-              <span class="label-text">Otro:</span>
-              <input type="text" name="ayuda_otro" class="line-input short">
-            </label>
-
-            <label class="option-item full-width">
-              <input type="checkbox" name="ayuda" value="Apoyo relacionado con salud">
-              <span class="checkbox-square"></span>
-              <span class="round-icon gold-icon">🏥</span>
-              <span class="label-text">Apoyo relacionado con salud</span>
-            </label>
-          </div>
-
-          <div class="handwriting-section">
-            <p class="handwriting-label">Cuéntanos brevemente tu necesidad: ✏️</p>
-            <div class="write-line-input">
-              <input type="text" name="detalle_necesidad_1" class="full-line">
-              <input type="text" name="detalle_necesidad_2" class="full-line">
-              <input type="text" name="detalle_necesidad_3" class="full-line">
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- SECCIÓN 5 -->
-      <div class="section-card">
-        <div class="pill-title navy-pill">
-          <div class="pill-icon">💬</div>
-          <span>5. ¿CÓMO PREFIERES QUE TE CONTACTEMOS?</span>
-        </div>
-
-        <div class="contact-row">
-          <label class="option-item">
-            <input type="checkbox" name="contacto" value="Llamada telefónica">
-            <span class="checkbox-square"></span>
-            <span class="round-icon green-solid">📞</span>
-            <span class="label-text">Llamada telefónica</span>
-          </label>
-
-          <label class="option-item">
-            <input type="checkbox" name="contacto" value="WhatsApp">
-            <span class="checkbox-square"></span>
-            <span class="round-icon whatsapp-solid">💬</span>
-            <span class="label-text">WhatsApp</span>
-          </label>
-
-          <label class="option-item">
-            <input type="checkbox" name="contacto" value="Visita">
-            <span class="checkbox-square"></span>
-            <span class="round-icon green-solid">🏠</span>
-            <span class="label-text">Visita</span>
-          </label>
-
-          <label class="option-item inline-item">
-            <input type="checkbox" name="contacto" value="Otro">
-            <span class="checkbox-square"></span>
-            <span class="round-icon grey-solid">💬</span>
-            <span class="label-text">Otro:</span>
-            <input type="text" name="contacto_otro" class="line-input">
-          </label>
-        </div>
-      </div>
-
-      <!-- PIE DE PÁGINA -->
-      <footer class="sheet-footer">
-        <div class="thanks-line">
-          <span class="script-thanks">Gracias</span>
-          <span class="thanks-text">por permitirnos acompañarte.</span>
-        </div>
-        <p class="footer-tagline">ESTAMOS AQUÍ PARA SERVIRTE Y CAMINAR CONTIGO.</p>
-        <p class="footer-heart">♡</p>
+      <!-- 1. DATOS PERSONALES -->
+      <section class="form-section">
+        <h3 class="section-title"><span class="badge">1</span> Datos Personales</h3>
         
-        <button type="submit" id="submitBtn">ENVIAR INFORMACIÓN</button>
+        <div class="field-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre y apellido" required>
+        </div>
+
+        <div class="field-group">
+          <label for="telefono">Teléfono / WhatsApp</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Ej: 300 123 4567" required>
+        </div>
+      </section>
+
+      <!-- 2. TIPO DE APOYO -->
+      <section class="form-section">
+        <h3 class="section-title"><span class="badge">2</span> ¿En qué podemos apoyarte?</h3>
+        <p class="hint">Puedes seleccionar una o ambas opciones</p>
+
+        <div class="grid-2">
+          <label class="choice-card">
+            <input type="checkbox" name="apoyo_general" value="Necesito Oración">
+            <div class="card-content">
+              <span class="icon">🙏</span>
+              <strong>Necesito Oración</strong>
+            </div>
+          </label>
+
+          <label class="choice-card">
+            <input type="checkbox" name="apoyo_general" value="Necesito Ayuda o Apoyo">
+            <div class="card-content">
+              <span class="icon">🤲</span>
+              <strong>Necesito Ayuda o Apoyo</strong>
+            </div>
+          </label>
+        </div>
+      </section>
+
+      <!-- 3. MOTIVOS DE ORACIÓN -->
+      <section class="form-section">
+        <h3 class="section-title"><span class="badge">3</span> Si solicitas oración, ¿por qué motivo?</h3>
+        <p class="hint">Selecciona las opciones que apliquen</p>
+
+        <div class="options-grid">
+          <label class="checkbox-option"><input type="checkbox" name="oracion" value="Salud o enfermedad"> 🩺 Salud o enfermedad</label>
+          <label class="checkbox-option"><input type="checkbox" name="oracion" value="Situación familiar o personal"> 👥 Situación familiar o personal</label>
+          <label class="checkbox-option"><input type="checkbox" name="oracion" value="Situación económica"> 💲 Situación económica</label>
+          <label class="checkbox-option"><input type="checkbox" name="oracion" value="Situación laboral"> 💼 Situación laboral</label>
+          <label class="checkbox-option"><input type="checkbox" name="oracion" value="Fortalecimiento espiritual"> 🌱 Fortalecimiento espiritual</label>
+          <label class="checkbox-option"><input type="checkbox" name="oracion" value="Situación emocional"> 🧠 Situación emocional</label>
+          <label class="checkbox-option"><input type="checkbox" name="oracion" value="Dirección o toma de decisiones"> 🧭 Toma de decisiones</label>
+        </div>
+
+        <div class="field-group extra-space">
+          <label for="oracion_otro">Otro motivo:</label>
+          <input type="text" id="oracion_otro" name="oracion_otro" placeholder="Escribe aquí si tienes otro motivo">
+        </div>
+      </section>
+
+      <!-- 4. TIPO DE AYUDA -->
+      <section class="form-section">
+        <h3 class="section-title"><span class="badge">4</span> Si solicitas ayuda o apoyo, ¿qué necesitas?</h3>
+        <p class="hint">Selecciona las opciones que apliquen</p>
+
+        <div class="options-grid">
+          <label class="checkbox-option"><input type="checkbox" name="ayuda" value="Apoyo económico"> 💵 Apoyo económico</label>
+          <label class="checkbox-option"><input type="checkbox" name="ayuda" value="Apoyo psicológico"> 🧠 Apoyo psicológico</label>
+          <label class="checkbox-option"><input type="checkbox" name="ayuda" value="Alimentos o mercado"> 🛍️ Alimentos o mercado</label>
+          <label class="checkbox-option"><input type="checkbox" name="ayuda" value="Asesoría financiera"> 📈 Asesoría financiera</label>
+          <label class="checkbox-option"><input type="checkbox" name="ayuda" value="Ropa o elementos básicos"> 👕 Ropa o elementos básicos</label>
+          <label class="checkbox-option"><input type="checkbox" name="ayuda" value="Orientación laboral"> 💼 Orientación laboral</label>
+          <label class="checkbox-option"><input type="checkbox" name="ayuda" value="Vivienda u hogar"> 🏠 Vivienda o necesidad del hogar</label>
+          <label class="checkbox-option"><input type="checkbox" name="ayuda" value="Apoyo relacionado con salud"> 🏥 Apoyo en salud</label>
+        </div>
+
+        <div class="field-group extra-space">
+          <label for="ayuda_otro">Otro requerimiento:</label>
+          <input type="text" id="ayuda_otro" name="ayuda_otro" placeholder="Especifica qué otra ayuda necesitas">
+        </div>
+
+        <div class="field-group">
+          <label for="detalle_necesidad">Cuéntanos brevemente tu necesidad:</label>
+          <textarea id="detalle_necesidad" name="detalle_necesidad" rows="3" placeholder="Describe tu situación en pocas palabras..."></textarea>
+        </div>
+      </section>
+
+      <!-- 5. PREFERENCIA DE CONTACTO -->
+      <section class="form-section">
+        <h3 class="section-title"><span class="badge">5</span> ¿Cómo prefieres que te contactemos?</h3>
+
+        <div class="options-grid">
+          <label class="checkbox-option"><input type="checkbox" name="contacto" value="Llamada telefónica"> 📞 Llamada telefónica</label>
+          <label class="checkbox-option"><input type="checkbox" name="contacto" value="WhatsApp"> 💬 WhatsApp</label>
+          <label class="checkbox-option"><input type="checkbox" name="contacto" value="Visita"> 🏠 Visita</label>
+        </div>
+
+        <div class="field-group extra-space">
+          <label for="contacto_otro">Otro medio:</label>
+          <input type="text" id="contacto_otro" name="contacto_otro" placeholder="Ejemplo: Correo electrónico">
+        </div>
+      </section>
+
+      <!-- BOTÓN Y MENSAJE FINAL -->
+      <footer class="form-footer">
+        <p class="bible-verse">«Lleven las cargas los unos de los otros, y así cumplirán la ley de Cristo.» <br><span>Gálatas 6:2</span></p>
+        <button type="submit" id="submitBtn">Enviar Formulario</button>
       </footer>
 
     </form>
-  </div>
+  </main>
 
   <script src="script.js"></script>
 </body>
