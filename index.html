@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obra Social - IPUC Belén Fátima</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <!-- Encabezado -->
+    <header class="header">
+      <div class="logo-section">
+        <!-- Puedes reemplazar src con la URL de tu logo -->
+        <div class="logo-placeholder">IPUC<br>BELÉN FÁTIMA</div>
+      </div>
+      <div class="title-section">
+        <h1>Obra Social</h1>
+        <p class="subtitle">♡ ESTAMOS PARA SERVIRTE ♡</p>
+        <p class="description">
+          Queremos acompañarte y apoyarte. La información suministrada será tratada con respeto y confidencialidad.
+        </p>
+      </div>
+      <div class="quote-section">
+        <p><em>"Lleven las cargas los unos de los otros, y así cumplirán la ley de Cristo."</em></p>
+        <span>Gálatas 6:2</span>
+      </div>
+    </header>
+
+    <form id="obraSocialForm">
+      
+      <!-- 1. Datos Personales -->
+      <section class="form-section">
+        <div class="section-header">
+          <span class="icon">👤</span> 1. DATOS PERSONALES
+        </div>
+        <div class="input-group">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="input-group">
+          <label for="telefono">Teléfono / WhatsApp:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+      </section>
+
+      <!-- 2. En qué podemos apoyarte -->
+      <section class="form-section center-header">
+        <div class="section-header dark-blue">
+          2. ¿EN QUÉ PODEMOS APOYARTE?
+        </div>
+        <p class="sub-label">Marca una o ambas opciones</p>
+        <div class="options-row">
+          <label class="checkbox-box">
+            <input type="checkbox" name="apoyo_general[]" value="Necesito Oración">
+            <span>🙏 NECESITO <strong>ORACIÓN</strong></span>
+          </label>
+          <label class="checkbox-box">
+            <input type="checkbox" name="apoyo_general[]" value="Necesito Ayuda o Apoyo">
+            <span>🤲 NECESITO <strong>AYUDA O APOYO</strong></span>
+          </label>
+        </div>
+      </section>
+
+      <div class="two-columns">
+        <!-- 3. Motivo de oración -->
+        <section class="form-section green-theme">
+          <div class="section-header green">
+            3. SI SOLICITAS ORACIÓN, ¿POR QUÉ MOTIVO?
+          </div>
+          <p class="sub-label">Puedes marcar varias opciones</p>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="oracion[]" value="Salud o enfermedad"> 🩺 Salud o enfermedad</label>
+            <label><input type="checkbox" name="oracion[]" value="Situación familiar o personal"> 👨‍👩‍👧‍👦 Situación familiar o personal</label>
+            <label><input type="checkbox" name="oracion[]" value="Situación económica"> 💲 Situación económica</label>
+            <label><input type="checkbox" name="oracion[]" value="Situación laboral"> 💼 Situación laboral</label>
+            <label><input type="checkbox" name="oracion[]" value="Fortalecimiento espiritual"> 🌱 Fortalecimiento espiritual</label>
+            <label><input type="checkbox" name="oracion[]" value="Situación emocional"> 🧠 Situación emocional</label>
+            <label><input type="checkbox" name="oracion[]" value="Dirección o toma de decisiones"> 🧭 Dirección o toma de decisiones</label>
+            <div class="inline-input">
+              <label><input type="checkbox" name="oracion[]" value="Otro"> Otro:</label>
+              <input type="text" name="oracion_otro">
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. Si solicitas ayuda o apoyo -->
+        <section class="form-section orange-theme">
+          <div class="section-header orange">
+            4. SI SOLICITAS AYUDA O APOYO, ¿QUÉ NECESITAS?
+          </div>
+          <p class="sub-label">Puedes marcar varias opciones</p>
+          <div class="checkbox-group grid-2">
+            <label><input type="checkbox" name="ayuda[]" value="Apoyo económico"> 💲 Apoyo económico</label>
+            <label><input type="checkbox" name="ayuda[]" value="Apoyo psicológico"> 🧠 Apoyo psicológico</label>
+            <label><input type="checkbox" name="ayuda[]" value="Alimentos o mercado"> 🛍️ Alimentos o mercado</label>
+            <label><input type="checkbox" name="ayuda[]" value="Asesoría financiera"> 📈 Asesoría financiera</label>
+            <label><input type="checkbox" name="ayuda[]" value="Ropa o elementos básicos"> 👕 Ropa / elementos básicos</label>
+            <label><input type="checkbox" name="ayuda[]" value="Orientación laboral"> 💼 Orientación laboral</label>
+            <label><input type="checkbox" name="ayuda[]" value="Vivienda"> 🏠 Vivienda o hogar</label>
+            <div class="inline-input full-width">
+              <label><input type="checkbox" name="ayuda[]" value="Otro"> Otro:</label>
+              <input type="text" name="ayuda_otro">
+            </div>
+          </div>
+          <div class="textarea-group">
+            <label>Cuéntanos brevemente tu necesidad:</label>
+            <textarea name="detalle_necesidad" rows="3"></textarea>
+          </div>
+        </section>
+      </div>
+
+      <!-- 5. Medio de contacto -->
+      <section class="form-section">
+        <div class="section-header dark-blue">
+          5. ¿CÓMO PREFIERES QUE TE CONTACTEMOS?
+        </div>
+        <div class="options-row wrap">
+          <label><input type="checkbox" name="contacto[]" value="Llamada telefónica"> 📞 Llamada telefónica</label>
+          <label><input type="checkbox" name="contacto[]" value="WhatsApp"> 💬 WhatsApp</label>
+          <label><input type="checkbox" name="contacto[]" value="Visita"> 🏠 Visita</label>
+          <div class="inline-input">
+            <label><input type="checkbox" name="contacto[]" value="Otro"> Otro:</label>
+            <input type="text" name="contacto_otro">
+          </div>
+        </div>
+      </section>
+
+      <!-- Botón de Envío -->
+      <div class="footer-submit">
+        <p class="thanks">Gracias por permitirnos acompañarte.<br><strong>ESTAMOS AQUÍ PARA SERVIRTE Y CAMINAR CONTIGO.</strong></p>
+        <button type="submit" id="submitBtn">Enviar Información</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
